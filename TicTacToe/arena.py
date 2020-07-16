@@ -132,7 +132,7 @@ while not isFinished(board):
 			playerInput = list(map(int,input().split()))
 		board[playerInput[0]][playerInput[1]]='X'
 	else:
-		result = subprocess.run(["python","random_player.py"],input=boardToString(board), capture_output=True, text=True)
+		result = subprocess.run(["python3","vivin_player.py"],input=boardToString(board), capture_output=True, text=True)
 
 		# print(result.stdout)
 		# print(result.stderr)
